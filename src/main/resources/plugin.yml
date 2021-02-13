@@ -1,0 +1,19 @@
+name: ${project.artifactId}
+description: ${project.description}
+main: ${project.groupId}.${project.artifactId}.${project.artifactId}
+version: ${project.version}
+api-version: 1.13
+author: MiaoWoo
+website: ${ciManagement.url}
+commands:
+  ${project.artifactId}:
+    description: ${project.artifactId} - ${project.description}
+    aliases: [mreport, report]
+    usage: §b使用/${project.artifactId} help 查看帮助!
+permissions:
+  ${project.artifactId}.admin:
+    description: ${project.artifactId} 管理员权限!
+    default: op
+  ${project.artifactId}.reload:
+    description: 重新载入插件!
+    default: op
